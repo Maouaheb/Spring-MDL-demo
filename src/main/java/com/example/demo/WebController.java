@@ -21,4 +21,10 @@ public class WebController implements WebMvcConfigurer  {
     }
 
 
+    @PostMapping("/")
+    public String checkPersonInfo( PersonForm personForm) {
+
+
+        return "redirect:/results";
+    }
 }
